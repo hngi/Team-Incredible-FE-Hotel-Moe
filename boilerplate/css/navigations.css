@@ -1,0 +1,32 @@
+ul{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: .9rem;
+
+
+}
+nav ul li{
+    display: inline-block;
+    padding: 0 1.5rem;
+    vertical-align: baseline;
+
+}
+nav{
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+#inner-footer{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+ul li {
+    display: inline-block;
+    padding: 0 2rem;
+    text-align: center;
+}

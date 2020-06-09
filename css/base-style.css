@@ -10,7 +10,10 @@ body {
     font-family: 'Muli', sans-serif;
 
 }
-a{
+a,button{
     cursor: pointer;
 }
 
+ul{
+    list-style-type: none;
+}

@@ -90,7 +90,7 @@ section.room {
 }
 
 .room__features {
-  font-family: Muli;
+  font-family: 'Muli';
   font-style: normal;
   font-weight: 300;
   font-size: 18px;

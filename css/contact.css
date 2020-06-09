@@ -1,0 +1,60 @@
+.container{
+    /* The image used */
+     background-image: url('../images/contact.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+    margin:0px;
+}
+
+.form{
+    width:400px;
+    height:200px;
+    background:#FFFFFF;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    box-sizing:border-box;
+}
+
+form>label, h2{
+  color:#333333;
+}
+
+h2{
+  text-align:center;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background:#e6e6e6;
+}
+
+textarea{
+  height:100px
+}
+
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    border:2px;
+    width: 100%;
+    background:#9B51E0;
+    color:#FFFFFF;
+    cursor:pointer;
+    transition:all .3s
+}
+button:hover{
+    color:#333333;
+}

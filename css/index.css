@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Muli:wght@400;600;700&display=swap');
+:root{
+    --purple: #9B51E0;
+    --white: #FFFFFF;
+    --black: #333333;
+}
+a{
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 0.2px solid red; */
+}
+.fake-logo{
+    font-family: 'Allura', sans-serif;
+}
+.landing-image{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+header{
+    width: 92vw;
+    height: 5vw;
+    margin: 0 5% 0 8%;
+    display: flex;
+    flex-direction: row;
+}
+header .fake-logo{
+    font-size: 3em;
+    color: var(--white);
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.fake-logo a{
+    color: var(--white);
+}
+nav{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+nav ul li a{
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    font-family: 'Muli', sans-serif;
+}
+nav ul li a:hover{
+    color: var(--purple);
+    transition: .5s;
+}
+nav button{
+    margin-left: 5%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background: var(--purple);
+    border: none;
+}
+nav button a{
+    font-size: 1.3em;
+    color: var(--white);
+    font-family: 'Muli', sans-serif;
+}
+nav button:hover{
+    transition: .5s;
+    border: 1px solid var(--white);
+    cursor: pointer;
+
+}
+.burger{
+    display: none;
+}
+.center-text{
+    width: 70%;
+    margin: 10% 15% 20% 15%;
+    font-family: 'Muli', sans-serif;
+    color: var(--white);
+}
+.center-text p:nth-child(1){
+    font-size: 4em;
+    text-align: center;
+    font-weight: bold;
+}
+.center-text p:nth-child(2){
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 2.5rem;
+    margin: 3rem 18rem 0 18rem;
+}
+.center-text button {
+    width: 20%;
+    height: 50px;
+    margin: 8% 40% 5% 40%;
+    border: 2px solid var(--white);
+    background: transparent;
+    color: var(--white);
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.center-text button:hover{
+    background-color: var(--white);
+    color: var(--black);
+    transition: .8s;
+    cursor: pointer;
+}
+@media screen and (max-width: 1440px){
+    
+    
+}

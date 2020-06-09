@@ -4,7 +4,6 @@ nav, #inner-footer{
 }
 nav{
     height: 10vh;
-
 }
 li{
     display: inline-block;
@@ -17,10 +16,10 @@ li{
 .site-logo{
     height: 45px;
 }
-#link_container{
+.link_container{
     padding: 1.5rem 0;
 }
-nav #link_container li{
+.link_container li{
     padding: 0 1.5rem;
     vertical-align: middle;
 }
@@ -38,3 +37,68 @@ li:hover{
 #inner-footer ul li {
     padding: 0 2rem;
 }
+@media screen and (max-width:768px) {
+    .line {
+     width:30px;
+     height:3px;
+     background: #000000;
+     margin:5px
+    }
+    nav {
+     position:relative
+    }
+    .hamburger {
+     position:absolute;
+     cursor:pointer;
+     right:5%;
+     top:50%;
+     transform:translate(-5%,-50%);
+     z-index:2
+    }
+    .navbar_brand{
+        position: absolute;
+        top: 9%;
+        left: 5%;
+    }
+    .link_container {
+     position:fixed;
+     background: #ffffff;
+     height:100vh;
+     width:100%;
+     clip-path:circle(100px at 90% -10%);
+     -webkit-clip-path:circle(100px at 90% -10%);
+     transition:all 1s ease-out;
+    }
+    .link_container.open {
+     clip-path:circle(1000px at 90% -10%);
+     -webkit-clip-path:circle(1000px at 90% -10%);
+     pointer-events:all
+    }
+    .link_container li {
+     opacity:0;
+     display: block;
+     margin: 0 auto;
+     width: 50%;
+     text-align: center;
+     margin: 3rem auto;
+    }
+    
+    .link_container li:nth-child(1) {
+     transition:all .5s ease .2s
+    }
+    .link_container li:nth-child(2) {
+     transition:all .5s ease .4s
+    }
+    .link_container li:nth-child(3) {
+     transition:all .5s ease .6s
+    }
+    li.fade {
+     opacity:1
+    }
+    #inner-footer li{
+        display: block;
+
+    }
+   }
+   
+   

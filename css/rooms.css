@@ -14,7 +14,7 @@
 
 body {
   /* body has this color on figma css */
-  /* background: #e5e5e5;  */
+  background: #e5e5e5;
 }
 
 img {
@@ -23,9 +23,9 @@ img {
 
 /* main styling */
 .main-container {
-  max-width: 1400px;
+  max-width: 1440px;
   height: 100%;
-  padding: 0 5rem;
+  padding: 0 3rem;
   overflow: hidden;
 }
 
@@ -43,7 +43,6 @@ section.room {
 
 .room__name {
   font-size: 24px;
-  /* line-height: 30px; */
   color: var(--purple);
   margin: 2rem 0;
 }
@@ -80,9 +79,6 @@ section.room {
 }
 
 .room__price {
-  font-family: 'muli';
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 30px;
   color: var(--black);
@@ -90,8 +86,6 @@ section.room {
 }
 
 .room__features {
-  font-family: 'Muli';
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 23px;
@@ -103,10 +97,78 @@ section.room {
   margin: 10px 0px;
   padding: 0.5rem 2rem;
   font-size: 18px;
-  text-align: center;
   background-color: var(--purple);
   color: var(--white);
   cursor: pointer;
   border: none;
-  outline: none;
+}
+
+/* button effects */
+.room__button:hover {
+  opacity: 0.7;
+}
+
+.room__button:active {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+/* MEDIA QUERIESS */
+@media all and (max-width: 520px) {
+  .main-container {
+    padding: 0 2rem;
+  }
+
+  h1.main-heading {
+    font-size: 25px;
+    margin-bottom: 1.5rem;
+  }
+
+  section.room {
+    margin: 2rem 0;
+  }
+
+  .room__images {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+    grid-template-areas:
+      'image1'
+      'image2'
+      'image3';
+  }
+
+  .room__image1 {
+    grid-area: image1;
+  }
+
+  .room__image2 {
+    grid-area: image2;
+  }
+
+  .room__image3 {
+    grid-area: image3;
+  }
+
+  .room__price {
+    font-size: 1rem;
+    line-height: 15px;
+    margin: 0.5rem 0;
+  }
+
+  .room__features {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
+  .room__button {
+    margin: 1rem 0;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
 }

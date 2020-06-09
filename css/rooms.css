@@ -103,6 +103,19 @@ section.room {
   border: none;
 }
 
+/* button effects */
+.room__button:hover {
+  opacity: 0.7;
+}
+
+.room__button:active {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
 /* MEDIA QUERIESS */
 @media all and (max-width: 520px) {
   .main-container {

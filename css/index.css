@@ -4,6 +4,9 @@
     --white: #FFFFFF;
     --black: #333333;
 }
+body{
+    overflow-x: hidden;
+}
 a{
     text-decoration: none;
 }
@@ -25,9 +28,15 @@ a{
     z-index: -1;
 }
 header{
+<<<<<<< Updated upstream
     width: 100vw;
     height: 5vw;
     margin: 0 5% 0 10%;
+=======
+    width: 90%;
+    height: 6vw;
+    margin: 0 5% 0 5%;
+>>>>>>> Stashed changes
     display: flex;
     flex-direction: row;
 }
@@ -35,6 +44,7 @@ header .fake-logo{
     font-size: 3em;
     color: var(--white);
     width: 20%;
+    margin-left: 2.5%;
     display: flex;
     align-items: center;
 }
@@ -83,15 +93,16 @@ nav button:hover{
     transition: .5s;
     border: 1px solid var(--white);
     cursor: pointer;
-
-}
-.burger{
-    display: none;
 }
 .center-text{
+<<<<<<< Updated upstream
     width: 70%;
     /* margin: 10% 15% 20% 15%; modified by @sccola*/ 
     margin: 10% 15% 0 15%;
+=======
+    width: 80%;
+    margin: 10% 10% 20% 10%;
+>>>>>>> Stashed changes
     font-family: 'Muli', sans-serif;
     color: var(--white);
 }
@@ -123,6 +134,7 @@ nav button:hover{
     cursor: pointer;
 }
 
+<<<<<<< Updated upstream
 /* INFO SECTIONS: ACCOMMODATION, FACILITIES , etc */
 
 
@@ -212,6 +224,83 @@ nav button:hover{
 }
 
 @media screen and (max-width: 1440px){
-    
-    
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        height: 8vh;
+    }
+    header .fake-logo{
+        width: 30%;
+        margin-left: 2.5%;
+    }
+    nav{
+        width: 60%
+    }
+    .center-text p:nth-child(2){
+        margin: 3rem 10rem 0 10rem;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    header{
+        height: 9vh;
+    }
+    header .fake-logo{
+        width: 30%;
+        font-size: 2.5em;
+    }
+    nav{
+        width: 55%
+    }
+    nav ul{
+        width: 75%;
+    }
+    nav button{
+        width: 20%;
+    }
+    *{
+        /* border: 1px solid red; */
+    }
+}
+@media screen and (max-width: 760px){
+    header{
+        height: 10vh;
+        margin: 0 2.5% 0 4%;
+    }
+    header .fake-logo{
+        width: 40%;
+        font-size: 1.8em;
+    }
+    nav ul{
+        display: none;
+    }
+    nav button{
+        width: 30%;
+        font-size: 0.7em;
+        height: 40px;
+    }
+    *{
+        /* border: 1px solid red; */
+    }
+    .center-text{
+        width: 70%;
+    }
+    .center-text p:nth-child(1){
+        font-size: 3em;
+    }
+    .center-text p:nth-child(2){
+        font-size: 1.2em;
+        text-align: center;
+        line-height: 2rem;
+        margin: 3rem 5rem 0 5rem;
+    }
+    .center-text button {
+        width: 40%;
+        height: 50px;
+        margin: 10% 30% 5% 30%;
+        border: 2px solid var(--white);
+        background: transparent;
+        font-size: 1.1em;
+    }
 }

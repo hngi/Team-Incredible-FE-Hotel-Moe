@@ -16,9 +16,9 @@ body{
 a{
     text-decoration: none;
 }
-.landing-image{
+.facilities-image{
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     position: absolute;
     left: 0;
     top: 0;
@@ -35,7 +35,7 @@ header{
     color: var(--white);
     font-family: 'Allura', sans-serif;
     font-size: 3em;
-    width: 20%;
+    width: 25%;
     margin-left: 2.5%;
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@ header{
     color: var(--white);
 }
 nav{
-    width: 70%;
+    width: 65%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -81,7 +81,7 @@ nav div img{
 .head {
     text-align: center;
     margin-bottom: 50px;
-    margin-top: 95vh;
+    margin-top: 70vh; /*added by daze */
 }
 
 .head__h2 {
@@ -170,3 +170,78 @@ input[type="submit"]  {
 }
 /*end of styling for smaller screen size*/
 
+/* daze for responsive facilities top section */
+@media screen and (max-width: 1440px){
+    body{
+        /* overflow-x: hidden; */
+    }
+    header{
+        height: 8vh;
+    }
+    header .fake-logo{
+        width: 30%;
+        margin-left: 2.5%;
+    }
+    nav{
+        width: 60%
+    }
+}
+@media screen and (max-width: 1024px){
+    header{
+        height: 9vh;
+    }
+    header .fake-logo{
+        width: 30%;
+        font-size: 2.5em;
+    }
+    nav{
+        width: 55%
+    }
+    nav ul{
+        width: 75%;
+    }
+    nav div{
+        width: 20%;
+    }
+}
+@media screen and (max-width: 760px){
+    header{
+        height: 10vh;
+        margin: 0 2.5% 0 4%;
+    }
+    header .fake-logo{
+        width: 40%;
+        font-size: 1.8em;
+    }
+    nav ul{
+        display: none;
+    }
+    nav div{
+        width: 35%;
+        font-size: 1em;
+        height: 40px;
+    }
+    nav div img{
+        width: 32px;
+    }
+}
+@media screen and (max-width: 420px){
+    *{
+        /* border: 1px solid red; */
+    }
+    header{
+        height: 12vh;
+    }
+    header .fake-logo{
+        width: 50%;
+        font-size: 1.5em;
+    }
+    nav div{
+        width: 50%;
+        font-size: 0.7em;
+        height: 40px;
+    }
+    nav div img{
+        width: 30px;
+    }
+}

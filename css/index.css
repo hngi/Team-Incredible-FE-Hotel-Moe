@@ -131,7 +131,7 @@ nav button:hover{
     background: #F4F4F2;
     margin: 3rem auto;
     padding-top: 3rem;
-    margin-top: 30vh;
+    margin-top: 30vh; /* added by daze */
   }
 
 .info {

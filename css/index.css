@@ -90,7 +90,8 @@ nav button:hover{
 }
 .center-text{
     width: 70%;
-    margin: 10% 15% 20% 15%;
+    /* margin: 10% 15% 20% 15%; modified by @sccola*/ 
+    margin: 10% 15% 0 15%;
     font-family: 'Muli', sans-serif;
     color: var(--white);
 }
@@ -121,6 +122,95 @@ nav button:hover{
     transition: .8s;
     cursor: pointer;
 }
+
+/* INFO SECTIONS: ACCOMMODATION, FACILITIES , etc */
+
+
+  .info-container {
+    width: 100%;
+    background: #F4F4F2;
+    margin: 3rem auto;
+    padding-top: 3rem;
+  }
+
+.info {
+  margin: 0 7.5rem 9.5rem 7.5rem;
+  width: 75rem;
+  height: 28.75rem;
+}
+
+.info .flex .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.col {
+  max-width: 45%;
+}
+
+.text-col {
+    max-width: 36.625rem;
+  }
+
+.image-col {
+    max-width: 38.375rem;
+  }
+
+.info__image {
+  width: 100%;
+}
+
+.info__text {
+    word-wrap: break-word;
+    font-family: 'Muli', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    color: #333333;
+    padding-left: 0;
+    padding-right: 5.75rem;
+    margin-bottom: 2.5rem;
+    max-width: 30.875rem;
+  }
+
+.info__text--smallTitle {
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  color: #000000;
+  margin-bottom: 0.9375rem;
+}
+
+.info__text--bigTitle {
+  font-size: 2.25rem;
+  line-height: 2.8125rem;
+  color: #333333;
+  margin-bottom: 1.875rem;
+}
+
+.info__button {
+  width: 14rem;
+  height: 3.25rem;
+  left: 51.625rem;
+  top: 95.375rem;
+  background: #9b51e0;
+  border: 1px solid #9b51e0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
+  color: #ffffff;
+  font-family: 'Muli', sans-serif;
+}
+
 @media screen and (max-width: 1440px){
     
     

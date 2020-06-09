@@ -1,0 +1,112 @@
+/* css variables */
+:root {
+  --purple: #9b51e0;
+  --white: #ffffff;
+  --black: #333333;
+}
+
+/* general styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* body has this color on figma css */
+  /* background: #e5e5e5;  */
+}
+
+img {
+  width: 100%;
+}
+
+/* main styling */
+.main-container {
+  max-width: 1400px;
+  height: 100%;
+  padding: 0 5rem;
+  overflow: hidden;
+}
+
+h1.main-heading {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--black);
+  margin-bottom: 3rem;
+}
+
+/* Each room section style */
+section.room {
+  margin: 3rem 0;
+}
+
+.room__name {
+  font-size: 24px;
+  /* line-height: 30px; */
+  color: var(--purple);
+  margin: 2rem 0;
+}
+
+/* room images displayed as a grid */
+.room__images {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  grid-template-areas:
+    'image1 image2'
+    'image1 image3';
+}
+
+.room__image1 {
+  grid-area: image1;
+  height: inherit;
+}
+
+.room__image2 {
+  grid-area: image2;
+  height: 100%;
+}
+
+.room__image3 {
+  grid-area: image3;
+  height: 100%;
+}
+
+.room__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room__price {
+  font-family: 'muli';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--black);
+  margin: 0.5rem 0;
+}
+
+.room__features {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--black);
+}
+
+/* button style */
+.room__button {
+  margin: 10px 0px;
+  padding: 0.5rem 2rem;
+  font-size: 18px;
+  text-align: center;
+  background-color: var(--purple);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}

@@ -125,14 +125,12 @@ nav button:hover{
 
 /* INFO SECTIONS: ACCOMMODATION, FACILITIES , etc */
 
-#main-wrapper {
-    width: 90rem;
-    height: 301.625rem;
-  }
 
   .info-container {
-    padding-top: 2rem;
+    width: 100%;
     background: #F4F4F2;
+    margin: 3rem auto;
+    padding-top: 3rem;
   }
 
 .info {
@@ -171,17 +169,17 @@ nav button:hover{
     font-family: 'Muli', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
     color: #333333;
     padding-left: 0;
-    padding-right: 92px;
-    margin-bottom: 40px;
-    max-width: 494px;
+    padding-right: 5.75rem;
+    margin-bottom: 2.5rem;
+    max-width: 30.875rem;
   }
 
 .info__text--smallTitle {
-  font-size: 1.125rempx;
+  font-size: 1.125rem;
   line-height: 1.4375rem;
   color: #000000;
   margin-bottom: 0.9375rem;

@@ -15,6 +15,16 @@
 body {
   /* body has this color on figma css */
   /* background: #e5e5e5;  */
+  background-color:#e5e5e5;
+  margin:auto;
+  
+font-family:"Muli" ,apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 1rem;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+width: 1000px;
+text-align: left;
 }
 
 img {
@@ -109,4 +119,15 @@ section.room {
   cursor: pointer;
   border: none;
   outline: none;
+}
+
+.room__button:hover{opacity: 0.7;}
+
+.room__button:active{
+  -webkit-transform: scale(0.80);
+  -moz-transform:scale(0.80);
+  -ms-transform: scale(0.80);
+  -o-transform: scale(0.80);
+  transform:scale(0.80);
+
 }

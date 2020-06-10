@@ -5,7 +5,9 @@
     --black: #333333;
 }
 
-
+body{
+  overflow-x: hidden;
+}
 /* INFO SECTIONS: ACCOMMODATION, FACILITIES , etc */
 /* .link_container{
     background-color: #efefef;

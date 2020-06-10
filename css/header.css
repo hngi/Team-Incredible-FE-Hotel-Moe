@@ -17,6 +17,9 @@
         color: #fff;
         
 }
+.line{
+    background-color: #ffffff;
+  }
 .book-btn{
     background-color: #9B51E0;
     border: none;
@@ -150,7 +153,7 @@
         background-color: #565551;
     }
     .center-text{
-        top: 10%; 
+        top: 15%; 
 }
 .center-text p:nth-child(1){
     font-size: 1.5em;
@@ -170,6 +173,9 @@
         height: 35px;
         
     }
+    .center-text button{
+        display: none;
+      }
 
 }
 

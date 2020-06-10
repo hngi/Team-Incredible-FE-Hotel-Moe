@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Muli:wght@400;600;700&display=swap');
 :root{
     --purple: #9B51E0;
     --white: #FFFFFF;
@@ -7,62 +6,37 @@
 
 
 /* INFO SECTIONS: ACCOMMODATION, FACILITIES , etc */
-/* .link_container{
-    background-color: #efefef;
-} */
+
+
 #home-wrapper{
-    background-color: #efefef;
+  background-color: #efefef;
+
 }
-  .info-container {
+  .info-container{
     width: 85%;
   margin: 0 auto;
   padding: 4rem 0;
   }
-
-.info {
-  margin: 0 7.5rem 9.5rem 7.5rem;
-  width: 75rem;
-  height: 28.75rem;
+  .home-grid {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 5rem;
 }
-
-.info .flex .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  width: 100%;
-  flex-wrap: nowrap;
+.home-grid__img{
+    flex-basis: 40%;
+    
 }
-
-.col {
-  max-width: 45%;
+.home-grid__img img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
 }
-
-.text-col {
-    max-width: 36.625rem;
-  }
-
-.image-col {
-    max-width: 38.375rem;
-  }
-
-.info__image {
-  width: 100%;
+.home-grid__text{
+    flex-basis: 50%;
+    align-self: center;
 }
-
-.info__text {
-    word-wrap: break-word;
-    font-family: 'Muli', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.6875rem;
-    color: #333333;
-    padding-left: 0;
-    padding-right: 5.75rem;
-    margin-bottom: 2.5rem;
-    max-width: 30.875rem;
-  }
 
 .info__text--smallTitle {
   font-size: 1.125rem;
@@ -77,8 +51,10 @@
   color: #333333;
   margin-bottom: 1.875rem;
 }
-
-.info__button {
+.grid-reverse{
+  flex-flow: row-reverse;
+}
+input[type="button"] {
   width: 14rem;
   height: 3.25rem;
   left: 51.625rem;
@@ -96,41 +72,84 @@
   color: #ffffff;
   font-family: 'Muli', sans-serif;
 }
+input[type="button"]:hover  {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #9B51E0;
+}
+.white-section{
+  background-color: #ffffff;
+}
+.customers {
+  width: 85%;
+margin: 0 auto;
+padding: 2rem 0;
+text-align: center;
 
-/*customer say*/
+}
+.customer-image-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
 .customers > img{
-  border-radius: 50%;
-  margin-left: 4rem;
-}
-.customers{
-  text-align: center;
-  background-color: white;
-  margin-top: 20px;
-}
-.customer_text{
-  margin-top: 20px;
-  font-family: 'Muli', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.6875rem;
-  color: #333333;
-  margin-left: auto;
-  margin-right: auto;
-  width: 35rem;
+  max-width: 100%;
+    height: auto;
 }
 .name{
+  padding-top: .8rem;
   color: blueviolet;
 }
-/* Message section */
 .message_text{
-  margin: 30px auto;
-  width: 35rem;
-  text-align: center;
+  margin:2rem auto;
 }
 .message_button{
+
   margin-left: auto;
   margin-right: auto;
 }
 
+
+@media only screen and (max-width:900px) {
+  .home-grid{
+      flex-direction: column;
+      margin-bottom: 2rem;
+  }
+  .info__text--smallTitle {
+    margin-bottom: .5rem;
+  }
+  .info__text--bigTitle {
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+  }
+
+  .home-grid__img {
+      text-align: center;
+      margin-bottom: 2rem; 
+  }
+
+  .home-grid__text {
+      text-align: center;
+      margin-bottom: 2rem;
+  }
+.info__button {
+margin: 2rem auto;
+}
+p{
+  line-height: 1.5rem;
+}
+input[type="button"]{
+  margin: 2rem auto;
+}
+}
+@media(max-width:600px) {
+  .customer-image-container{
+    display: none;
+  }
+  .customer_text{
+    width: 60%;
+  }
+}
 

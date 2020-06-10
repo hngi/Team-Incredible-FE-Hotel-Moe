@@ -97,6 +97,31 @@
   font-family: 'Muli', sans-serif;
 }
 
+/*customer say*/
+.customers > img{
+  border-radius: 50%;
+  margin-left: 4rem;
+}
+.customers{
+  text-align: center;
+  background-color: white;
+  margin-top: 20px;
+}
+.customer_text{
+  margin-top: 20px;
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  color: #333333;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35rem;
+}
+.name{
+  color: blueviolet;
+}
 /* Message section */
 .message_text{
   margin: 30px auto;

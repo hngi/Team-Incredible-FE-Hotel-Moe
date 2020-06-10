@@ -123,6 +123,8 @@ section.room {
   h1.main-heading {
     font-size: 25px;
     margin-bottom: 1.5rem;
+  padding-top: 2rem;
+
   }
 
   section.room {

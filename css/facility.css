@@ -19,7 +19,7 @@
 }
 
 hr {
-    margin: 3px auto;
+    margin: 1.2rem auto 5px;
     width: 100px;
     height: 6px;
     background-color: #9B51E0;
@@ -52,6 +52,9 @@ hr {
 }
 p {
     margin:20px 0;
+}
+.footer-copyright{
+    margin: unset;
 }
 input[type="submit"]  {
     width: 30%;

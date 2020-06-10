@@ -1,52 +1,56 @@
-.facility-header,
-.home-header {
-  position: relative;
+
+.facility-header,.home-header{
+    position: relative;
 }
-.facility-image,
-.home-image {
-  width: 100%;
-  display: block;
-  min-height: auto;
-  margin: 0 auto;
+.facility-image,.home-image{
+    width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
 }
-.nav-container {
-  position: absolute;
-  z-index: 999;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 0%;
-  color: #fff;
+.nav-container{
+    position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        top: 0%; 
+        color: #fff;
+        
 }
-.book-btn {
-  background-color: #9b51e0;
-  border: none;
-  padding: 0.8rem 1.2rem;
-  display: inline-block;
-  margin-left: 1.4rem;
+.line{
+    background-color: #ffffff;
+  }
+.book-btn{
+    background-color: #9B51E0;
+    border: none;
+    padding: .8rem 1.2rem;
+    display: inline-block;
+    margin-left: 1.4rem;
 }
-.book-btn:hover {
-  transition: 0.5s;
-  border: 1px solid var(--white);
+.book-btn:hover{
+    transition: .5s;
+    border: 1px solid var(--white);
 }
-.center-text {
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 40%;
-  color: #fff;
+.center-text{
+    position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        top: 40%; 
+        color: #fff;
 }
-.center-text p:nth-child(1) {
-  font-size: 4em;
-  text-align: center;
-  font-weight: bold;
+.center-text p:nth-child(1){
+    font-size: 4em;
+    text-align: center;
+    font-weight: bold;
 }
-.center-text p:nth-child(2) {
-  font-size: 1.5em;
-  text-align: center;
-  line-height: 2.5rem;
-  margin: 3rem 18rem 0 18rem;
+.center-text p:nth-child(2){
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 2.5rem;
+    margin: 3rem 18rem 0 18rem;
+
 }
 .center-text button {
   width: 20%;
@@ -137,14 +141,16 @@
   }
 }
 
-@media screen and (max-width: 510px) {
-  .link_container {
-    background-color: #565551;
-  }
-  .center-text {
-    top: 10%;
-  }
-  .center-text p:nth-child(1) {
+
+@media screen and (max-width:510px) {
+    .link_container{
+        background-color: #565551;
+    }
+    .center-text{
+        top: 15%; 
+}
+.center-text p:nth-child(1){
+
     font-size: 1.5em;
   }
   .center-text p:nth-child(2) {
@@ -161,3 +167,17 @@
     height: 35px;
   }
 }
+    .center-text button {
+        margin: 0 auto;
+        display: block;
+        font-size: .9rem;
+        width: 25%;
+        height: 35px;
+        
+    }
+    .center-text button{
+        display: none;
+      }
+
+}
+

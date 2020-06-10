@@ -1,12 +1,11 @@
+
 :root{
     --purple: #9B51E0;
     --white: #FFFFFF;
     --black: #333333;
 }
 
-
 /* INFO SECTIONS: ACCOMMODATION, FACILITIES , etc */
-
 
 #home-wrapper{
   background-color: #efefef;
@@ -39,18 +38,21 @@
 }
 
 .info__text--smallTitle {
+
   font-size: 1.125rem;
   line-height: 1.4375rem;
   color: #000000;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 15px;
 }
 
-.info__text--bigTitle {
+.resp__text--bigTitle {
   font-size: 2.25rem;
   line-height: 2.8125rem;
+  line-height: 45px;
   color: #333333;
-  margin-bottom: 1.875rem;
+  margin-bottom: 30px;
 }
+
 .grid-reverse{
   flex-flow: row-reverse;
 }
@@ -102,14 +104,27 @@ text-align: center;
   padding-top: .8rem;
   color: blueviolet;
 }
+
 .message_text{
   margin:2rem auto;
 }
 .message_button{
-
   margin-left: auto;
   margin-right: auto;
 }
+
+.info-container > section {
+  margin: 80px 0;
+}
+
+@media all and (max-width: 1024px) {
+  .resp__flex .resp__row {
+    flex-wrap: wrap;
+  }
+  .resp__row .resp__col {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 
 
 @media only screen and (max-width:900px) {
@@ -152,4 +167,3 @@ input[type="button"]{
     width: 60%;
   }
 }
-

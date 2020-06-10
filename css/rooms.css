@@ -102,7 +102,9 @@ section.room {
 
 /* button effects */
 .room__button:hover {
-  opacity: 0.7;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #9B51E0;
 }
 
 .room__button:active {

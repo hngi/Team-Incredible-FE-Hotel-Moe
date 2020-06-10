@@ -17,8 +17,19 @@
         left: 0;
         right: 0;        
         top: 0%; 
-        color: #fff;
+        color: #fff;  
         
+}
+.play-button{
+  position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 40%; 
+        font-family: Arial,sans-serif;
+        color: #fff;
+        width: 60%; 
 }
 
 .line{

@@ -1,31 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Muli:wght@400;600;700&display=swap');
-:root{
-    --purple: #9B51E0;
-    --white: #FFFFFF;
-    --black: #333333;
+:root {
+  --purple: #9b51e0;
+  --white: #ffffff;
+  --black: #333333;
 }
-
 
 /* INFO SECTIONS: ACCOMMODATION, FACILITIES , etc */
 /* .link_container{
     background-color: #efefef;
 } */
-#home-wrapper{
-    background-color: #efefef;
+#home-wrapper {
+  background-color: #efefef;
 }
-  .info-container {
-    width: 85%;
+.info-container {
+  width: 85%;
   margin: 0 auto;
   padding: 4rem 0;
-  }
-
-.info {
-  margin: 0 7.5rem 9.5rem 7.5rem;
-  width: 75rem;
-  height: 28.75rem;
 }
 
-.info .flex .row {
+.resp__flex .resp__row {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -34,51 +27,44 @@
   flex-wrap: nowrap;
 }
 
-.col {
+.resp__flex .resp__row.reverse {
+  flex-direction: row-reverse;
+}
+
+.resp__col {
   max-width: 45%;
 }
 
-.text-col {
-    max-width: 36.625rem;
-  }
-
-.image-col {
-    max-width: 38.375rem;
-  }
-
-.info__image {
+.resp__image {
   width: 100%;
 }
 
-.info__text {
-    word-wrap: break-word;
-    font-family: 'Muli', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.6875rem;
-    color: #333333;
-    padding-left: 0;
-    padding-right: 5.75rem;
-    margin-bottom: 2.5rem;
-    max-width: 30.875rem;
-  }
+.resp__text {
+  word-wrap: break-word;
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  color: #333333;
+}
 
-.info__text--smallTitle {
+.resp__text--smallTitle {
   font-size: 1.125rem;
   line-height: 1.4375rem;
   color: #000000;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 15px;
 }
 
-.info__text--bigTitle {
+.resp__text--bigTitle {
   font-size: 2.25rem;
   line-height: 2.8125rem;
+  line-height: 45px;
   color: #333333;
-  margin-bottom: 1.875rem;
+  margin-bottom: 30px;
 }
 
-.info__button {
+.resp__button {
   width: 14rem;
   height: 3.25rem;
   left: 51.625rem;
@@ -123,14 +109,30 @@
   color: blueviolet;
 }
 /* Message section */
-.message_text{
+.message_text {
   margin: 30px auto;
-  width: 35rem;
+  max-width: 35rem;
   text-align: center;
 }
-.message_button{
+.message_button {
   margin-left: auto;
   margin-right: auto;
 }
 
+.info-container > section {
+  margin: 80px 0;
+}
 
+@media all and (max-width: 1024px) {
+  .resp__flex .resp__row {
+    flex-wrap: wrap;
+  }
+  .resp__row .resp__col {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .resp__text {
+    margin-top: 40px;
+  }
+}

@@ -167,3 +167,8 @@ input[type="button"]{
     width: 60%;
   }
 }
+@media (max-width:768px){
+.book-btn{
+  display: none;
+}
+}

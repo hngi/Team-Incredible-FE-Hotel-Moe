@@ -144,10 +144,10 @@
 }
 .center-text p:nth-child(1){
 
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
   .center-text p:nth-child(2) {
-    width: 80%;
+    width: 85%;
     margin: 2rem auto;
     font-size: 1.2rem;
     line-height: 1.7rem;

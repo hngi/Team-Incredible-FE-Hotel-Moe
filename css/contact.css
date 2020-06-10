@@ -25,7 +25,7 @@ nav{
 }
 .form{
 
-    width:400px;
+    width:450px;
     height:450px;
     background:#FFFFFF;
     margin-top: 20px;
@@ -75,6 +75,6 @@ button:hover{
 @media screen and (max-width: 600px)
 {
   .form{
-
+    width: 400px;
   }
 }

@@ -24,7 +24,9 @@ img {
 .main-container {
   width: 85%;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 9rem 0;
+
+  /* padding: rem 0; */
 }
 
 h1.main-heading {

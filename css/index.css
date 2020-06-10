@@ -83,6 +83,21 @@
   font-family: 'Muli', sans-serif;
 }
 
+/* Message section */
+.message_text {
+  margin: 30px auto;
+  max-width: 35rem;
+  text-align: center;
+}
+.message_button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-container > section {
+  margin: 80px 0;
+}
+
 @media all and (max-width: 1024px) {
   .resp__flex .resp__row {
     flex-wrap: wrap;
@@ -95,8 +110,4 @@
   .resp__text {
     margin-top: 40px;
   }
-}
-
-.info-container > section {
-  margin: 80px 0;
 }

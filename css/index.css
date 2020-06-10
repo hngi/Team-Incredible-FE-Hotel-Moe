@@ -97,4 +97,15 @@
   font-family: 'Muli', sans-serif;
 }
 
+/* Message section */
+.message_text{
+  margin: 30px auto;
+  width: 35rem;
+  text-align: center;
+}
+.message_button{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 

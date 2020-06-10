@@ -4,6 +4,11 @@ nav, #inner-footer{
 }
 nav{
     height: 10vh;
+    width: 100vw;
+}
+#nav-wrapper{
+    position: fixed;
+
 }
 li{
     display: inline-block;
@@ -28,9 +33,16 @@ ul li a{
     color: #000;
     font-size: .9rem;
 }
-li:hover{
-    border-bottom: 2px solid #9B51E0;
+
+ul li a:hover{
+   color: #9B51E0;
 }
+
+nav .link_container .current{
+    border-bottom: 2px solid #9B51E0;
+    padding: 0 1.5rem .8rem;
+}
+
 #inner-footer{
     padding: 2rem 0;
 }
@@ -38,6 +50,7 @@ li:hover{
     padding: 0 2rem;
 }
 @media screen and (max-width:768px) {
+    
     .line {
      width:30px;
      height:3px;
@@ -97,10 +110,14 @@ li:hover{
     li.fade {
      opacity:1
     }
-    #inner-footer li{
-        display: block;
+    #inner-footer{
+        flex-flow: column;
+        text-align: center;
 
     }
+    #inner-footer p{
+        padding: 2rem 0;
+    } 
    }
    
    

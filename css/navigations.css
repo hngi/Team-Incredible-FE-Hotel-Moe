@@ -68,11 +68,13 @@ li:hover{
      clip-path:circle(100px at 90% -10%);
      -webkit-clip-path:circle(100px at 90% -10%);
      transition:all 1s ease-out;
+     opacity: 0;
     }
     .link_container.open {
      clip-path:circle(1000px at 90% -10%);
      -webkit-clip-path:circle(1000px at 90% -10%);
-     pointer-events:all
+     pointer-events:all;
+     opacity: 1;
     }
     .link_container li {
      opacity:0;

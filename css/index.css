@@ -11,6 +11,9 @@
   background-color: #efefef;
 
 }
+#nav-wrapper{
+  background-color:rgba(72, 86, 95, 0.472);
+}
   .info-container{
     width: 85%;
   margin: 0 auto;

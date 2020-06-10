@@ -4,6 +4,11 @@ nav, #inner-footer{
 }
 nav{
     height: 10vh;
+    width: 100vw;
+}
+#nav-wrapper{
+    position: fixed;
+
 }
 li{
     display: inline-block;
@@ -105,10 +110,14 @@ nav .link_container .current{
     li.fade {
      opacity:1
     }
-    #inner-footer li{
-        display: block;
+    #inner-footer{
+        flex-flow: column;
+        text-align: center;
 
     }
+    #inner-footer p{
+        padding: 2rem 0;
+    } 
    }
    
    

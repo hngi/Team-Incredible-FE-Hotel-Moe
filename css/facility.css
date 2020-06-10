@@ -1,4 +1,7 @@
 /*start of styling for larger screen size*/
+#nav-wrapper{
+    background-color: hsla(50, 4%, 33%, 0.472);
+}
 .facility-main{
     background-color: #efefef;
 }
@@ -53,9 +56,7 @@ hr {
 p {
     margin:20px 0;
 }
-.footer-copyright{
-    margin: unset;
-}
+
 input[type="submit"]  {
     width: 30%;
     height: 40px;

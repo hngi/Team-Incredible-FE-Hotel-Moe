@@ -5,9 +5,14 @@
     padding: 0;
     box-sizing: inherit;
 }
+html{
+    height: 100%;
+}
 body {
     box-sizing: border-box;
     font-family: 'Muli', sans-serif;
+    height: 100%;
+
 
 }
 a,button,input{

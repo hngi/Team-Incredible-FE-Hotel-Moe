@@ -1,0 +1,27 @@
+.facility-header{
+    position: relative;
+}
+.facility-image{
+    width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+.nav-container{
+    position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        top: 0%; 
+        color: #fff;
+        
+}
+.link_container a{
+    color: #fff;
+}
+@media screen and (max-width:768px) {
+    .link_container{
+        background-color: #565551;
+    }
+}

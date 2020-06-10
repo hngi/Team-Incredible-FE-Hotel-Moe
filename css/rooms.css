@@ -12,21 +12,19 @@
   box-sizing: border-box;
 }
 
-body {
-  /* body has this color on figma css */
+nav,#room-wrapper,.link_container{
   background: #e5e5e5;
-}
 
+}
 img {
   width: 100%;
 }
 
 /* main styling */
 .main-container {
-  max-width: 1440px;
-  height: 100%;
-  padding: 0 3rem;
-  overflow: hidden;
+  width: 85%;
+  margin: 0 auto;
+  padding: 4rem 0;
 }
 
 h1.main-heading {

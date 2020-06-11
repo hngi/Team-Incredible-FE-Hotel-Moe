@@ -28,9 +28,17 @@ ul li a{
     color: #000;
     font-size: .9rem;
 }
+
 li:hover{
-    border-bottom: 2px solid #9B51E0;
+    background-color: #9B51E0;
+    padding: 0 1.5em;
 }
+
+nav .link_container .current{
+    border-bottom: 2px solid #9B51E0;
+    padding: 0 1.5rem;
+}
+
 #inner-footer{
     padding: 2rem 0;
 }

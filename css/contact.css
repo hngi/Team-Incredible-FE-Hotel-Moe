@@ -72,9 +72,15 @@ button:hover{
     color:#333333;
 }
 /* Media Quary for small screen */
-@media screen and (max-width: 600px)
+@media screen and (max-width:600px) and (min-width:400px){
+  .form{
+    width: 380px;
+  }
+}
+    
+@media screen and (max-width:399px)
 {
   .form{
-    width: 400px;
+    width: 320px;
   }
 }

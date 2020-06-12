@@ -1,3 +1,6 @@
+nav{
+  background-color: #FFFFFF;
+}
 .container{
   display: flex;
   justify-content: center;
@@ -6,7 +9,7 @@
      background-image: url("../images/contact.jpg");
 
     /* Full height */
-    height: 490px;
+    height: 650px;
     width: 100%;
 
     /* Center and scale the image nicely */
@@ -16,8 +19,13 @@
    
 }
 
+.contact-inner{
+  padding: 9rem 0;
+
+}
 .form{
-    width:480px;
+
+    width:450px;
     height:450px;
     background:#FFFFFF;
     margin-top: 20px;
@@ -64,9 +72,15 @@ button:hover{
     color:#333333;
 }
 /* Media Quary for small screen */
-@media screen and (max-width: 600px)
+@media screen and (max-width:600px) and (min-width:400px){
+  .form{
+    width: 380px;
+  }
+}
+    
+@media screen and (max-width:399px)
 {
   .form{
-
+    width: 320px;
   }
 }

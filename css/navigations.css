@@ -1,32 +1,123 @@
-ul{
-    list-style-type: none;
+nav, #inner-footer{
+    display: flex;
+    justify-content: space-around;
+}
+nav{
+    height: 10vh;
+    width: 100vw;
+}
+#nav-wrapper{
+    position: fixed;
+
+}
+li{
+    display: inline-block;
+    height: 29px;
+}
+.navbar_brand{
+    display: inline-block;
+    padding: 1.3rem 0;
+}
+.site-logo{
+    height: 45px;
+}
+.link_container{
+    padding: 1.5rem 0;
+}
+.link_container li{
+    padding: 0 1.5rem;
+    vertical-align: middle;
 }
 ul li a{
     text-decoration: none;
     color: #000;
     font-size: .9rem;
-
-
 }
-nav ul li{
-    display: inline-block;
-    padding: 0 1.5rem;
-    vertical-align: baseline;
 
+ul li a:hover{
+   color: #9B51E0;
 }
-nav{
-    padding: 1.5rem 0;
-    display: flex;
-    justify-content: space-around;
 
+nav .link_container .current{
+    border-bottom: 2px solid #9B51E0;
+    padding: 0 1.5rem .8rem;
 }
+
 #inner-footer{
     padding: 2rem 0;
-    display: flex;
-    justify-content: space-around;
 }
-ul li {
-    display: inline-block;
+#inner-footer ul li {
     padding: 0 2rem;
-    text-align: center;
 }
+@media screen and (max-width:768px) {
+    
+    .line {
+     width:30px;
+     height:3px;
+     background: #000000;
+     margin:5px
+    }
+    nav {
+     position:relative
+    }
+    .hamburger {
+     position:absolute;
+     cursor:pointer;
+     right:5%;
+     top:50%;
+     transform:translate(-5%,-50%);
+     z-index:2
+    }
+    .navbar_brand{
+        position: absolute;
+        top: 9%;
+        left: 5%;
+    }
+    .link_container {
+     position:fixed;
+     background: #ffffff;
+     height:100vh;
+     width:100%;
+     clip-path:circle(100px at 90% -10%);
+     -webkit-clip-path:circle(100px at 90% -10%);
+     transition:all 1s ease-out;
+     opacity: 0;
+    }
+    .link_container.open {
+     clip-path:circle(1000px at 90% -10%);
+     -webkit-clip-path:circle(1000px at 90% -10%);
+     pointer-events:all;
+     opacity: 1;
+    }
+    .link_container li {
+     opacity:0;
+     display: block;
+     margin: 0 auto;
+     width: 50%;
+     text-align: center;
+     margin: 3rem auto;
+    }
+    
+    .link_container li:nth-child(1) {
+     transition:all .5s ease .2s
+    }
+    .link_container li:nth-child(2) {
+     transition:all .5s ease .4s
+    }
+    .link_container li:nth-child(3) {
+     transition:all .5s ease .6s
+    }
+    li.fade {
+     opacity:1
+    }
+    #inner-footer{
+        flex-flow: column;
+        text-align: center;
+
+    }
+    #inner-footer p{
+        padding: 2rem 0;
+    } 
+   }
+   
+   

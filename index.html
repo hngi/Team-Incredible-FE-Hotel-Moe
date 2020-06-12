@@ -1,153 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/base-style.css">
     <link rel="stylesheet" href="css/navigations.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
     <title>Delight Hotels | Home </title>
 </head>
 <body>
+
     <section id="main-wrapper">
-        <section class="first-container">
-            <img src="images/landingImage.jpg" alt="landingImage" class="landing-image">
-        <header>
-            <p class="fake-logo"><a href="index.html"> Delight Hotels </a></p>
-        <!-- navigation -->
-            <nav>
-                <!-- <a class="navbar-brand" href="index.html">
-                    <img src="images/Delight Hotels.svg" width="194" height="44" alt="site logo"> 
-                </a> -->
-                <ul>
-                    <li>
-                        <a href="rooms.html">Rooms</a>
-                    </li>
-                    <li>
-                        <a href="facilities.html">Facilities</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <button><a href="#">Book Now</a></button>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
-        <!-- navigation ends -->
-        </header>
+      <header class="home-header">
+        <img
+          src="images/landingImage.jpg"
+          class="home-image"
+          alt="home image"
+        />
+        <div class="nav-container">
+          <div id="nav-wrapper">
+
+          <nav>
+            <a class="navbar_brand" href="index.html">
+              <img
+                class="site-logo"
+                src="images/Delight_Hotels.svg"
+                width="194"
+                height="44"
+                alt="site logo"
+              />
+            </a>
+            <div class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <ul class="link_container">
+              <li>
+                <a href="rooms.html">Rooms</a>
+              </li>
+              <li>
+                <a href="facility.html">Facilities</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <button type="button" class="book-btn">
+                <a href="https://timbu.com/"> Book now</a>
+              </button>
+            </ul>
+          </nav>
+          </div>
+        </div>
+
+    </header>
         <section class="center-text">
             <p>Welcome to Delight Hotels</p>
             <p>Our Hotel and Resorts remain stylish, modern, and elegant. We offer hospitable services and we help to make travelling easy with our serene environment,
             tasty meals, unique activities, nature and hospitality.</p>
-            <button>Book Now</button>
+            <a href="https://timbu.com/"> <button>Book Now</button></a>
         </section>
-         </section> <!-- end of first-container by daze -->
+         <!-- end of first-container by daze -->
 
         <!-- HOTEL INFO SECTIONS -->
-        
+        <section id="home-wrapper">
+
          <div class="info-container">
              
+          <section class="home-grid">
+            <div class="home-grid__img">
+                <img src="images/History.jpg" alt="Accommodation">
+            </div>
+            <div class="home-grid__text">
+              <p class="info__text--smallTitle">
+                DELIGHT HOTELS
+              </p>
+              <p class="info__text--bigTitle">
+                Our History
+              </p>
+                <p>
+                  Travelers throughout the world have always sought hospitable places to rest and eat. Although modern hotels feature conveniences such as televisions, en-suite showers and minibars, they fulfill the same purpose as ancient inns and boarding houses. The history of hotel and restaurant management goes back many years but has always involved the essential concept of hospitality. It all started in 1919, when Oluwaleke Adebayo bought his first hotel. Since then, we’ve led the industry with... 
+                </p>
+                <a href="#"></a>
+                <input type="button" value="Read More">
+              </a>
+            </div>
+        </section>
             <!-- ACCOMMODATION -->
-            <section class="info">
-                <div class="flex">
-                  <div class="row">
-                    <div class="text-col">
-                      <div class="info__text">
-                        <p class="info__text--smallTitle">
-                          COMFORTABILITY
-                        </p>
-        
-                        <p class="info__text--bigTitle">
-                          Accommodation
-                        </p>
-        
-                        <p>
-                            Each guest room and suite features mordern craftsmanship, 
-                            creating an elegant and romantic aura through hand-painted 
-                            headboards, handcrafted furnishings and original artwork. 
-                            Our hotel offers decadent amenities, providing each guest room 
-                            with high speed Wi-Fi, bottled water, luscious bath amenities, 
-                            nightly turndown service, plush bathrobes and more at no extra charge.
-                        </p>
-        
-                        <button class="info__button">
-                            Check Room Rates
-                        </button>
-                      </div>
-                    </div>
-                    <div class="image-col">
-                      <img
-                        class="info__image"
-                        src="images/accommodation.jpg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-            </section>
-            
-            <!-- FACILITIES AND SERVICES -->
-            <section class="info">
-                <div class="flex">
-                  <div class="row">
-                    <div class="text-col">
-                      <div class="info__text">
-                        <p class="info__text--smallTitle">
-                            ACCESSIBILITY
-                        </p>
-        
-                        <p class="info__text--bigTitle">
-                            Facilities And Services
-                        </p>
-        
-                        <p>
-                            We have one of the best facilities in Lagos State for your comfortability and enjoyment. 
-                            Facilities ranging from a well equipped gym, a steam room, spa, unisex hair and nair salon 
-                            amongst others. These facilities also have professionals waiting to attend to you.
-                        </p>
-        
-                        <button class="info__button">
-                            Book Now
-                        </button>
-                      </div>
-                    </div>
-                    <div class="image-col">
-                      <img
-                        class="info__image"
-                        src="images/facilities and services.jpg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-            </section>
-         </div>
-        
-        <!-- footer -->
-        <footer>
-            <section id="inner-footer">
-                <ul>
-                    <li>
-                        <a href="rooms.html">Rooms</a>
-    
-                    </li>
-                    <li>
-                        <a href="facilities.html">Facilities</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    
-                </ul>
-                <p>Delight Hotels Copyright 2020</p>
-            </section>
-        </footer>
 
+            <section class="home-grid grid-reverse">
+              <div class="home-grid__img">
+                  <img src="images/accommodation.jpg" alt="Accommodation">
+              </div>
+              <div class="home-grid__text">
+                <p class="info__text--smallTitle">
+                  COMFORTABILITY
+                </p>
+                <p class="info__text--bigTitle">
+                  Accommodation
+                </p>
+                  <p> Each guest room and suite features mordern craftsmanship, 
+                    creating an elegant and romantic aura through hand-painted 
+                    headboards, handcrafted furnishings and original artwork. 
+                    Our hotel offers decadent amenities, providing each guest room 
+                    with high speed Wi-Fi, bottled water, luscious bath amenities, 
+                    nightly turndown service, plush bathrobes and more at no extra charge.</p>
+
+          <a href="rooms.html"><input type="button" value="Check Room Rates">
+          </a>
+
+              </div>
+          </section>
+          <section class="home-grid">
+            <div class="home-grid__img">
+                <img src="images/meals.jpg" alt="Meals">
+            </div>
+            <div class="home-grid__text">
+              <p class="info__text--smallTitle">
+                DELICIOUS MEALS
+              </p>
+              <p class="info__text--bigTitle">
+                Mouth Watery Meals
+              </p>
+              <p>
+                Savor our satisfactory and  mouth-watery food prepared with love and care by our professional chefs. We offer Italian, Mexican, Chinese cuisines and also our Nigerian traditional meals that do makes you feel completely at home. We promise you home away from home experience in our hotel.
+            </p>
+
+            <a href="https://timbu.com/">
+          <input type="button" value="Book Now"></a>
+
+            </div>
+
+        </section>
+        <section class="home-grid grid-reverse">
+          <div class="home-grid__img">
+              <img src="images/facilities_and_services.jpg" alt="Facilities and services">
+          </div>
+          <div class="home-grid__text">
+            <p class="info__text--smallTitle">
+              ACCESSIBILITY
+            </p>
+            <p class="info__text--bigTitle">
+              Facilities And Services
+            </p>
+            <p>
+              We have one of the best facilities in Lagos State for your comfortability and enjoyment. 
+              Facilities ranging from a well equipped gym, a steam room, spa, unisex hair and nair salon 
+              amongst others. These facilities also have professionals waiting to attend to you.
+          </p>
+
+          <a href="facility.html">
+          <input type="button" value="Book Now">
+        </a>
+
+          </div>
+      </section>
+    </div>
+  </section>
+      <section class="white-section">
+        <div class="customers">
+          <p class="info__text--bigTitle">
+          What Our Customers Say
+          </p>
+          <div class="customer-image-container">
+            <img src="images/customer (1).jpg">
+          <img src="images/customer (2).jpg">
+          <img src="images/customer_1.jpg">
+          <img src="images/customer_2.jpg">
+          <img src="images/customer_3.jpg">
+          </div>
+          
+         <p> My experience in delight hotels was amazing. From the <br>environment to the meals, it made
+           my vacation more enjoyable.</p>
+          <p class="name">Romoke Odunga</p>
+          
+          
+          <!-- Send a Message -->
+              <div class="message_text">
+                <p class="info__text--bigTitle">
+                    Send A Message
+                </p>
+                <p>Do you want to make enquiries or book one of our amazing services?</p>
+                <p>Our inbox is always open, kindly reach out to us and you will be </p>
+                <p>attended to as soon as we get it. Thank You!</p>
+
+              <a href="contact.html"> <input type="button" class="message_button" value="Contact Us"></a> 
+
+          
+                <!-- <button class="info__button message_button">
+                    
+                </button> -->
+         
+              </div>
+            </div>    
+
+      <!-- footer -->
+      <footer>
+        <section id="inner-footer">
+          <ul>
+            <li>
+              <a href="rooms.html">Rooms</a>
+            </li>
+            <li>
+              <a href="facility.html">Facilities</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <p>Delight Hotels Copyright 2020</p>
+        </section>
+      </footer>
     </section>
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

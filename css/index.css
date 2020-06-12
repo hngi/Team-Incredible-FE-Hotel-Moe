@@ -1,198 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Muli:wght@400;600;700&display=swap');
+
 :root{
     --purple: #9B51E0;
     --white: #FFFFFF;
     --black: #333333;
 }
-a{
-    text-decoration: none;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 0.2px solid red; */
-}
-.fake-logo{
-    font-family: 'Allura', sans-serif;
-}
-.landing-image{
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-}
-header{
-    width: 92vw;
-    height: 5vw;
-    margin: 0 5% 0 8%;
-    display: flex;
-    flex-direction: row;
-}
-header .fake-logo{
-    font-size: 3em;
-    color: var(--white);
-    width: 20%;
-    display: flex;
-    align-items: center;
-}
-.fake-logo a{
-    color: var(--white);
-}
-nav{
-    width: 70%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-nav ul{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 50%;
-}
-nav ul li a{
-    color: var(--white);
-    display: flex;
-    flex-direction: row;
-    font-family: 'Muli', sans-serif;
-}
-nav ul li a:hover{
-    color: var(--purple);
-    transition: .5s;
-}
-nav button{
-    margin-left: 5%;
-    width: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    background: var(--purple);
-    border: none;
-}
-nav button a{
-    font-size: 1.3em;
-    color: var(--white);
-    font-family: 'Muli', sans-serif;
-}
-nav button:hover{
-    transition: .5s;
-    border: 1px solid var(--white);
-    cursor: pointer;
-
-}
-.burger{
-    display: none;
-}
-.center-text{
-    width: 70%;
-    /* margin: 10% 15% 20% 15%; modified by @sccola*/ 
-    margin: 10% 15% 0 15%;
-    font-family: 'Muli', sans-serif;
-    color: var(--white);
-}
-.center-text p:nth-child(1){
-    font-size: 4em;
-    text-align: center;
-    font-weight: bold;
-}
-.center-text p:nth-child(2){
-    font-size: 1.5em;
-    text-align: center;
-    line-height: 2.5rem;
-    margin: 3rem 18rem 0 18rem;
-}
-.center-text button {
-    width: 20%;
-    height: 50px;
-    margin: 8% 40% 5% 40%;
-    border: 2px solid var(--white);
-    background: transparent;
-    color: var(--white);
-    font-size: 1.2em;
-    text-transform: uppercase;
-}
-.center-text button:hover{
-    background-color: var(--white);
-    color: var(--black);
-    transition: .8s;
-    cursor: pointer;
-}
 
 /* INFO SECTIONS: ACCOMMODATION, FACILITIES , etc */
 
+#home-wrapper{
+  background-color: #efefef;
 
-  .info-container {
-    width: 100%;
-    background: #F4F4F2;
-    margin: 3rem auto;
-    padding-top: 3rem;
-  }
-
-.info {
-  margin: 0 7.5rem 9.5rem 7.5rem;
-  width: 75rem;
-  height: 28.75rem;
 }
-
-.info .flex .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  width: 100%;
-  flex-wrap: nowrap;
+#nav-wrapper{
+  background-color:rgba(72, 86, 95, 0.472);
 }
-
-.col {
-  max-width: 45%;
+  .info-container{
+    width: 85%;
+  margin: 0 auto;
+  padding: 4rem 0;
+  }
+  .home-grid {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 5rem;
 }
-
-.text-col {
-    max-width: 36.625rem;
-  }
-
-.image-col {
-    max-width: 38.375rem;
-  }
-
-.info__image {
-  width: 100%;
+.home-grid__img{
+    flex-basis: 40%;
+    
 }
-
-.info__text {
-    word-wrap: break-word;
-    font-family: 'Muli', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.6875rem;
-    color: #333333;
-    padding-left: 0;
-    padding-right: 5.75rem;
-    margin-bottom: 2.5rem;
-    max-width: 30.875rem;
-  }
+.home-grid__img img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+.home-grid__text{
+    flex-basis: 50%;
+    align-self: center;
+}
 
 .info__text--smallTitle {
+
   font-size: 1.125rem;
   line-height: 1.4375rem;
   color: #000000;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 15px;
 }
 
 .info__text--bigTitle {
   font-size: 2.25rem;
   line-height: 2.8125rem;
+  line-height: 45px;
   color: #333333;
-  margin-bottom: 1.875rem;
+  margin-bottom: 30px;
 }
 
-.info__button {
+.grid-reverse{
+  flex-flow: row-reverse;
+}
+input[type="button"] {
   width: 14rem;
   height: 3.25rem;
   left: 51.625rem;
@@ -210,8 +77,92 @@ nav button:hover{
   color: #ffffff;
   font-family: 'Muli', sans-serif;
 }
+input[type="button"]:hover  {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #9B51E0;
+}
+.white-section{
+  background-color: #ffffff;
+}
+.customers {
+  width: 85%;
+margin: 0 auto;
+padding: 2rem 0;
+text-align: center;
 
-@media screen and (max-width: 1440px){
-    
-    
+}
+.customer-image-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+.customers > img{
+  max-width: 100%;
+    height: auto;
+}
+.name{
+  padding-top: .8rem;
+  color: blueviolet;
+}
+
+.message_text{
+  margin:2rem auto;
+}
+.message_button{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-container > section {
+  margin: 80px 0;
+}
+
+
+@media only screen and (max-width:900px) {
+  .home-grid{
+      flex-direction: column;
+      margin-bottom: 2rem;
+  }
+  .info__text--smallTitle {
+    margin-bottom: .5rem;
+  }
+  .info__text--bigTitle {
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+  }
+
+  .home-grid__img {
+      text-align: center;
+      margin-bottom: 2rem; 
+  }
+
+  .home-grid__text {
+      text-align: center;
+      margin-bottom: 2rem;
+  }
+.info__button {
+margin: 2rem auto;
+}
+p{
+  line-height: 1.5rem;
+}
+input[type="button"]{
+  margin: 2rem auto;
+}
+}
+@media(max-width:600px) {
+  .customer-image-container{
+    display: none;
+  }
+  .customer_text{
+    width: 60%;
+  }
+}
+@media (max-width:768px){
+.book-btn{
+  display: none;
+}
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400&display=swap"
       rel="stylesheet"
@@ -16,142 +17,163 @@
   <body>
     <section id="main-wrapper">
       <!-- navigation -->
-      <nav>
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="images/Delight Hotels.svg"
-            width="194"
-            height="44"
-            alt="site logo"
-          />
-        </a>
-        <ul>
-          <li>
-            <a href="rooms.html">Rooms</a>
-          </li>
-          <li>
-            <a href="facilities.html">Facilities</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div id="nav-wrapper">
+        <nav>
+          <a class="navbar_brand" href="index.html">
+              <img class="site-logo" src="images/Delight_Hotels_black.svg" width="194" height="44" alt="site logo"> 
+          </a>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <!-- <ul class="nav-links"> -->
+              <ul class="link_container">
+                  <li>
+                      <a class="current" href="rooms.html">Rooms</a>
+  
+                  </li>
+                  <li>
+                      <a href="facility.html">Facilities</a>
+                  </li>
+                  <li>
+                      <a href="contact.html">Contact</a>
+                  </li>
+              </ul>
+        </nav>
+      </div>
+     
       <!-- navigation ends -->
 
       <!-- container wrapping main content -->
-      <div class="main-container">
-        <h1 class="main-heading">
-          Our Best Rooms
-        </h1>
-
-        <!-- sections with class "room" for each room -->
-        <section class="room">
-          <git class="room__name">
-            Golden Deluxe Suite
-          </git>
-
-          <!-- room images -->
-          <div class="room__images">
-            <img
-              src="images/Golden Deluxe suite (1).jpg"
-              alt="room__image1"
-              class="room__image1"
-            />
-            <img
-              src="images/Golden Deluxe suite (2).jpg"
-              alt="room__image2"
-              class="room__image2"
-            />
-            <img
-              src="images/Golden Deluxe suite (3).jpg"
-              alt="room__image3"
-              class="room__image3"
-            />
-          </div>
-
-          <!-- further room information -->
-          <div class="room__info">
-            <div class="room__text">
-                <p class="room__price"> &#8358 120,000/night</p>
-                <p class="room__features">Amenities: Free Wifi, Central Air Conditioning, Mini bar...</p>
-            </div> 
-            <button class="room__button">Book Now</button>
+      <main id="room-wrapper">
+        <div class="main-container">
+          <h1 class="main-heading">
+            Our Best Rooms
+          </h1>
+  
+          <!-- sections with class "room" for each room -->
+          <section class="room">
+            <git class="room__name">
+              Golden Deluxe Suite
+            </git>
+  
+            <!-- room images -->
+            <div class="room__images">
+              <img
+                src="images/Golden Deluxe suite (1).jpg"
+                alt="room__image1"
+                class="room__image1"
+              />
+              <img
+                src="images/Golden Deluxe suite (2).jpg"
+                alt="room__image2"
+                class="room__image2"
+              />
+              <img
+                src="images/Golden Deluxe suite (3).jpg"
+                alt="room__image3"
+                class="room__image3"
+              />
             </div>
-        </section>
-
-        <!-- start new section here -->
-        <section class="room">
-          <git class="room__name">
-            Queens Suite
-          </git>
-
-          <!-- room images -->
-          <div class="room__images">
-            <img
-              src="images/Queen Suites (1).jpg"
-              alt="queensuite__image1"
-              class="room__image1"
-            />
-            <img
-              src="images/Queen Suites (2).jpg"
-              alt="queensuite__image3"
-              class="room__image2"
-            />
-            <img
-              src="images/Queen Suites (3).jpg"
-              alt="queensuite__image3"
-              class="room__image3"
-            />
-          </div>
-
-          <!-- further room information -->
-          <div class="room__info">
-            <div class="room__text">
-                <p class="room__price"> &#8358 80,000/night</p>
-                <p class="room__features">Amenities: Free Wifi, Central Air Conditioning, Mini bar...</p>
-            </div> 
-            <button class="room__button">Book Now</button>
+  
+            <!-- further room information -->
+            <div class="room__info">
+              <div class="room__text">
+                  <p class="room__price"> &#8358 120,000/night</p>
+                  <p class="room__features">Amenities: Free Wifi, Central Air Conditioning, Mini bar...</p>
+              </div> 
+              <button class="room__button">
+                <a href="https://timbu.com/"> 
+                    Book Now
+                </a>
+              </button>
+              </div>
+          </section>
+  
+          <!-- start new section here -->
+          <section class="room">
+            <git class="room__name">
+              Queens Suite
+            </git>
+  
+            <!-- room images -->
+            <div class="room__images">
+              <img
+                src="images/Queen Suites (1).jpg"
+                alt="queensuite__image1"
+                class="room__image1"
+              />
+              <img
+                src="images/Queen Suites (2).jpg"
+                alt="queensuite__image3"
+                class="room__image2"
+              />
+              <img
+                src="images/Queen Suites (3).jpg"
+                alt="queensuite__image3"
+                class="room__image3"
+              />
             </div>
-        </section>
-
-         <!-- start new section here -->
-         <section class="room">
-          <git class="room__name">
-            Kings Suite
-          </git>
-
-          <!-- room images -->
-          <div class="room__images">
-            <img
-              src="images/Kings suite (1).jpg"
-              alt="kingsuite__image1"
-              class="room__image1"
-            />
-            <img
-              src="images/Kings suite (2).jpg"
-              alt="kingsuite__image3"
-              class="room__image2"
-            />
-            <img
-              src="images/Kings suite (3).jpg"
-              alt="kingsuite__image3"
-              class="room__image3"
-            />
-          </div>
-
-          <!-- further room information -->
-          <div class="room__info">
-            <div class="room__text">
-                <p class="room__price"> &#8358 180,000/night</p>
-                <p class="room__features">Amenities: Free Wifi, Central Air Conditioning, Mini bar...</p>
-            </div> 
-            <button class="room__button">Book Now</button>
+  
+            <!-- further room information -->
+            <div class="room__info">
+              <div class="room__text">
+                  <p class="room__price"> &#8358 80,000/night</p>
+                  <p class="room__features">Amenities: Free Wifi, Central Air Conditioning, Mini bar...</p>
+              </div> 
+              <button class="room__button">
+                <a href="https://timbu.com/"> 
+                    Book Now
+                </a>
+              </button>
             </div>
-        </section>
+          </section>
+  
+           <!-- start new section here -->
+           <section class="room">
+            <git class="room__name">
+              Kings Suite
+            </git>
+  
+            <!-- room images -->
+            <div class="room__images">
+              <img
+                src="images/Kings suite (1).jpg"
+                alt="kingsuite__image1"
+                class="room__image1"
+              />
+              <img
+                src="images/Kings suite (2).jpg"
+                alt="kingsuite__image3"
+                class="room__image2"
+              />
+              <img
+                src="images/Kings suite (3).jpg"
+                alt="kingsuite__image3"
+                class="room__image3"
+              />
+            </div>
+  
+            <!-- further room information -->
+            <div class="room__info">
+              <div class="room__text">
+                  <p class="room__price"> &#8358 180,000/night</p>
+                  <p class="room__features">Amenities: Free Wifi, Central Air Conditioning, Mini bar...</p>
+              </div> 
+              <button class="room__button">
+                <a href="https://timbu.com/"> 
+                    Book Now
+                </a>
+              </button>
+              </div>
+          </section>
+  
+        </div>
+  
 
-      </div>
-
+      </main>
+      
       <!-- footer -->
       <footer>
         <section id="inner-footer">
@@ -160,7 +182,7 @@
               <a href="rooms.html">Rooms</a>
             </li>
             <li>
-              <a href="facilities.html">Facilities</a>
+              <a href="facility.html">Facilities</a>
             </li>
             <li>
               <a href="contact.html">Contact</a>
@@ -170,5 +192,6 @@
         </section>
       </footer>
     </section>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -5,12 +5,23 @@
     padding: 0;
     box-sizing: inherit;
 }
+html{
+    height: 100%;
+}
 body {
     box-sizing: border-box;
     font-family: 'Muli', sans-serif;
+    height: 100%;
+
 
 }
-a{
+a,button,input{
     cursor: pointer;
 }
 
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}

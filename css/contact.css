@@ -75,6 +75,14 @@ button:hover{
 @media screen and (max-width:600px) and (min-width:400px){
   .form{
     width: 380px;
+    margin-top: -27px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .form{
+    width: 300px;
+    margin-top: -27px;
   }
 }
     
@@ -82,5 +90,18 @@ button:hover{
 {
   .form{
     width: 320px;
+    margin-top: -27px;
+    
+  }
+
+  @media screen and (max-width:320px)
+{
+  .form{
+    width: 290px;
+    margin-top: -27px;
+    
+  }
+  .container{
+    height: 610px;
   }
 }
